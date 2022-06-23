@@ -57,7 +57,7 @@ public void createorganizationTest() throws Throwable
    
    
    
-   if(oraganisationnameforverify.contains(organisationname+randomno))
+   if(oraganisationnameforverify.contains(organisationname))
    {
 	   System.out.println("organistion is created");
    }
