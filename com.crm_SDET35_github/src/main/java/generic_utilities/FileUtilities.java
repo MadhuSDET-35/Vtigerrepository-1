@@ -18,7 +18,7 @@ public class FileUtilities
 	 */
 public String getPropertyKeyValue(String key) throws IOException
 {
-	FileInputStream fileinputstream=new FileInputStream("src/main/resources/prop.properties");
+	FileInputStream fileinputstream=new FileInputStream(IpathConstants.FILEPATH);
 	Properties properties=new Properties();
 	properties.load(fileinputstream);
 	String value = properties.getProperty(key);

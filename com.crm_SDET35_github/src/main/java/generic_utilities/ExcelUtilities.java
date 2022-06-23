@@ -23,7 +23,7 @@ public class ExcelUtilities
 	
 	public String ReadExceldataValue(String sheetnum,int rownum,int cellnum) throws EncryptedDocumentException, IOException
 	{
-		FileInputStream fileinput=new FileInputStream("src/main/resources/organisation_ass.xlsx");
+		FileInputStream fileinput=new FileInputStream(IpathConstants.EXCELPATH);
 		Workbook book=WorkbookFactory.create(fileinput);
 		Sheet sheet = book.getSheet(sheetnum);
 		Row row = sheet.getRow(rownum);
@@ -39,7 +39,7 @@ public class ExcelUtilities
  */
 public void writeExcelDataValue(String sheetnum,int rownum,int cellnum,String data) throws IOException
 {
-	FileInputStream fileinput=new FileInputStream("src/main/resources/organisation_ass.xlsx");
+	FileInputStream fileinput=new FileInputStream(IpathConstants.EXCELPATH);
 	Workbook book=WorkbookFactory.create(fileinput);
 	Sheet sheet = book.getSheet(sheetnum);
 	Row row = sheet.createRow(rownum);

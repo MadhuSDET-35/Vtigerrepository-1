@@ -20,7 +20,7 @@ import generic_utilities.WebdriverUtilities;
 
 public class CreateOrganisationTest extends Baseclass
 {
-@Test(groups = "smoke")
+@Test
 
 public void createorganizationTest() throws Throwable
 {
@@ -42,7 +42,7 @@ public void createorganizationTest() throws Throwable
    organisationpg.clickonneworganisationIMGBTN();
    
    //fail script
-   Assert.fail();
+   //Assert.fail();
   
    //click on create new organisation
    organisationpg.getEnterorganisationnameTXTFLD().sendKeys(organisationname+randomno);
@@ -57,14 +57,14 @@ public void createorganizationTest() throws Throwable
    
    
    
-//   if(oraganisationnameforverify.contains(organisationname+randomno))
-//   {
-//	   System.out.println("organistion is created");
-//   }
-//   else
-//   {
-//	   System.out.println("organisation is not created");
-//   }
-//   
+   if(oraganisationnameforverify.contains(organisationname+randomno))
+   {
+	   System.out.println("organistion is created");
+   }
+   else
+   {
+	   System.out.println("organisation is not created");
+   }
+   
 }
 }

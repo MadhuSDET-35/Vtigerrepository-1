@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm_vtiger.AnimalType">
+      <class name="com.crm.vtiger.campaignTestng.CreateCampaignTest">
         <methods>
-          <include name="elephant"/>
+          <include name="closebrowser"/>
+          <include name="logoutfromapplication"/>
+          <include name="dbconnection"/>
+          <include name="createCampaigntest"/>
+          <include name="loginToApplication"/>
+          <include name="launchthebrowser"/>
+          <include name="closedbconfig"/>
         </methods>
-      </class> <!-- com.crm_vtiger.AnimalType -->
+      </class> <!-- com.crm.vtiger.campaignTestng.CreateCampaignTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
