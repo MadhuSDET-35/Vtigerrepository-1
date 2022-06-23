@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="generic_utilities.Itestlisners"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.cr.campaignTestng.CreateCampaignTest">
+        <methods>
+          <include name="dbconnection"/>
+          <include name="loginToApplication"/>
+          <include name="createCampaigntest"/>
+          <include name="launchthebrowser"/>
+        </methods>
+      </class> <!-- com.cr.campaignTestng.CreateCampaignTest -->
+      <class name="com.crm.products.testng.Createproducts">
+        <methods>
+          <include name="dbconnection"/>
+          <include name="loginToApplication"/>
+          <include name="createproducts"/>
+          <include name="launchthebrowser"/>
+        </methods>
+      </class> <!-- com.crm.products.testng.Createproducts -->
+      <class name="com.crm.products.testng.Createproductwithvendors">
+        <methods>
+          <include name="dbconnection"/>
+          <include name="createproductwithvendors"/>
+          <include name="loginToApplication"/>
+          <include name="launchthebrowser"/>
+        </methods>
+      </class> <!-- com.crm.products.testng.Createproductwithvendors -->
+      <class name="com.crm.OrganizationTestng.CreateOrganizationWithIndustryType">
+        <methods>
+          <include name="CreateorganizationwithIndustrytype"/>
+          <include name="dbconnection"/>
+          <include name="loginToApplication"/>
+          <include name="launchthebrowser"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTestng.CreateOrganizationWithIndustryType -->
+      <class name="com.cr.campaignTestng.CreateCampaignWithProductTest">
+        <methods>
+          <include name="createcampaignWithproducttest"/>
+          <include name="dbconnection"/>
+          <include name="loginToApplication"/>
+          <include name="launchthebrowser"/>
+        </methods>
+      </class> <!-- com.cr.campaignTestng.CreateCampaignWithProductTest -->
+      <class name="com.crm.OrganizationTestng.CreateOrganisationTest">
+        <methods>
+          <include name="dbconnection"/>
+          <include name="loginToApplication"/>
+          <include name="launchthebrowser"/>
+          <include name="createorganizationTest"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTestng.CreateOrganisationTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

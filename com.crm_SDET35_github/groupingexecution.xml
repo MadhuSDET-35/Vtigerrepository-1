@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+<groups>
+<run>
+<include name="smoke"/>
+<include name="regression"/>
+</run>
+</groups>
+<listeners>
+<listener class-name="generic_utilities.Itestlisners"></listener>
+</listeners>
+  <test thread-count="5" name="Test1">
+    <classes>
+        <class name="com.crm.products.testng.Createproducts"/>
+        <class name="com.crm.products.testng.Createproductwithvendors"/>
+        <class name="com.crm.OrganizationTestng.CreateOrganisationTest"/>
+        <class name="com.crm.OrganizationTestng.CreateOrganizationWithIndustryType"/>
+        <class name="com.cr.campaignTestng.CreateCampaignTest"/>
+        <class name="com.cr.campaignTestng.CreateCampaignWithProductTest"/>
+     </classes>
+  </test>
+</suite>

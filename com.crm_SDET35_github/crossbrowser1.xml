@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="suite">
+<listeners>
+<listener class-name="generic_utilities.Itestlisners"></listener>
+</listeners>
+  <test name="Testrunner1">
+   <parameter name="BROWSER" value="chrome"/>
+   <classes>
+    <class name="com.crm.products.testng.Createproductwithvendors"/>
+    <class name="com.crm.OrganizationTestng.CreateOrganisationTest"/>
+   </classes>
+  </test>
+  <test name="testrunner2">
+   <parameter name="BROWSER" value="firefox"/>
+    <classes>
+       <class name="com.crm.OrganizationTestng.CreateOrganizationWithIndustryType"/>
+        <class name="com.cr.campaignTestng.CreateCampaignTest"/>
+    </classes>
+ </test>
+</suite>
