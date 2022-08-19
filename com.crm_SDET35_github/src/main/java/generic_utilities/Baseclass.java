@@ -44,6 +44,8 @@ public void dbconnection()
 @BeforeClass(groups = {"smoke","regression"})
 public void launchthebrowser() throws IOException
 {
+	//String BROWSER = System.getProperty("browser");
+	//String URL = System.getProperty("url");
 	String BROWSER = filLIB.getPropertyKeyValue("browser");
 	String URL = filLIB.getPropertyKeyValue("url");
 	
@@ -104,7 +106,7 @@ public void logoutfromapplication()
 @AfterClass
 public void closebrowser()
 {
-	driver.quit();
+	driver.close();
 }
 @AfterSuite
 public void closedbconfig()

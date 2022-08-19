@@ -84,7 +84,7 @@ public WebElement getCliconSignoutLNK() {
 
 public void signoutfromapplication(WebDriver driver)
 {
-	mouseOverActions(driver, logoutfromapplication);
+	mouseOverActions(driver,logoutfromapplication);
 	cliconSignoutLNK.click();
 }
 

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\MADHUSUDAN\AppData\Local\Temp\testng-eclipse-1422752202\testng-customsuite.xml</span>
+                    <span>C:\Users\MADHUSUDAN\AppData\Local\Temp\testng-eclipse--1893818146\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.crm.vtiger.OrganizationTestng.CreateOrganisationTest" class="method navigator-link" hash-for-method="createorganizationTest">createorganizationTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.crm.vtiger.campaignTestng.CreateCampaignTest" class="method navigator-link" hash-for-method="createCampaigntest">createCampaigntest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +122,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.crm.vtiger.OrganizationTestng.CreateOrganisationTest</span>
+              <span class="class-name">com.crm.vtiger.campaignTestng.CreateCampaignTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createorganizationTest">
-                  </a> <!-- createorganizationTest -->
-                  <span class="method-name">createorganizationTest</span>
+                  <a name="createCampaigntest">
+                  </a> <!-- createCampaigntest -->
+                  <span class="method-name">createCampaigntest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\MADHUSUDAN\AppData\Local\Temp\testng-eclipse-1422752202\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\MADHUSUDAN\AppData\Local\Temp\testng-eclipse--1893818146\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +146,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.crm.vtiger.OrganizationTestng.CreateOrganisationTest&quot;/&gt;
+      &lt;class name=&quot;com.crm.vtiger.campaignTestng.CreateCampaignTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -170,6 +170,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createCampaigntest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -188,14 +196,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createorganizationTest')
-data.setCell(0, 2, 'com.crm.vtiger.OrganizationTestng.CreateOrganisationTest')
-data.setCell(0, 3, 17321);
+data.setCell(0, 1, 'createCampaigntest')
+data.setCell(0, 2, 'com.crm.vtiger.campaignTestng.CreateCampaignTest')
+data.setCell(0, 3, 10442);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -221,36 +229,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.crm.vtiger.OrganizationTestng.CreateOrganisationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.crm.vtiger.campaignTestng.CreateCampaignTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">dbconnection</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">launchthebrowser</span>
-                <span class="method-start">38 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">8760 ms</span>
+                <span class="method-start">7259 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createorganizationTest</span>
-                <span class="method-start">12761 ms</span>
+                <span class="method-name">createCampaigntest</span>
+                <span class="method-start">10644 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">logoutfromapplication</span>
-                <span class="method-start">30087 ms</span>
+                <span class="method-start">21089 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">45431 ms</span>
+                <span class="method-start">22672 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">closedbconfig</span>
-                <span class="method-start">45511 ms</span>
+                <span class="method-start">26625 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
